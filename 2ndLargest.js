@@ -1,23 +1,20 @@
-const numbers= [10,33,5,99,6];
+
 function secondLargest ( numbers ) {
     //Write your code here
+
+    let temp=[];
+    let a=0;
+    let b=0;
+    
       for (let index = 0; index < numbers.length; index++) {
-       
-       if (numbers[index]>numbers[index+1]) {
-         let  temp = numbers[index];
-       
-       }
-       else
-       {
-       var  temp2nd=numbers[index+1]
-       }
-       if (index < numbers.length) {
-        console.log(temp2nd);
-        return  temp2nd;
-       }
+        a=numbers[index];
+        b=numbers[index+1];
+        a-b>b-a
+    ////
        
       }
     //Don't forget to return
-    
+return temp;
     }
-    secondLargest ( numbers );
+    const numbers= [10,33,5,99,6,66,45,89,100];
+   console.log(secondLargest ( numbers ));

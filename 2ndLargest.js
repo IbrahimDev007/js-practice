@@ -2,19 +2,12 @@
 function secondLargest ( numbers ) {
     //Write your code here
 
-    let temp=[];
-    let a=0;
-    let b=0;
-    
-      for (let index = 0; index < numbers.length; index++) {
-        a=numbers[index];
-        b=numbers[index+1];
-        a-b>b-a
+    let temp= numbers.sort();
     ////
        
-      }
+      
     //Don't forget to return
-return temp;
+return temp[numbers.length-2];
     }
     const numbers= [10,33,5,99,6,66,45,89,100];
    console.log(secondLargest ( numbers ));
